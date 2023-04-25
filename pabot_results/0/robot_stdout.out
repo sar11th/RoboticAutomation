@@ -1,0 +1,33 @@
+==============================================================================
+Demoqa Sitecheck                                                              
+==============================================================================
+Verify BookStore Test                                                 DEMOQA
+Book Store
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\PycharmProjects\testing\project\demoqa\Test_cases\demoqa_sitecheck.robot:142
+    T:  Verify BookStore Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\PycharmProjects\testing\project\demoqa\Test_cases\demoqa_sitecheck.robot:148
+      Verify BookStore testing    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\PycharmProjects\testing\project\demoqa\Resources\bookstore_keywords.robot:37
+      Sleep    3s
+______________________________________________________________________________
+| FAIL |
+Execution terminated by signal
+------------------------------------------------------------------------------
+verify newuser                                                        | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+verify Register Valid                                                 | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Logout and Login                                                      | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Demoqa Sitecheck                                                      | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Output:  D:\PycharmProjects\testing\project\demoqa\pabot_results\0\output.xml
