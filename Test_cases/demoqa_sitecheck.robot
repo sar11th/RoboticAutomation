@@ -180,6 +180,7 @@ verify Register All Fields Are Empty
     Enter Lastname    ${EMPTY}
     Enter Usernamenewuser    ${EMPTY}
     Enter Passwordnewuser    ${EMPTY}
+    execute javascript    window.scrollTo(0,250)
 #    click element    ${captcha}
     Click registersubmit
 
@@ -193,6 +194,7 @@ verify Register Empty Firstname
     Enter Lastname    ${txt_lastname}
     Enter Usernamenewuser    ${txt_username}
     Enter Passwordnewuser    ${txt_password}
+    execute javascript    window.scrollTo(0,250)
 #    click element    ${captcha}
     Click registersubmit
 #
@@ -204,6 +206,7 @@ verify Register Empty Lastname
     Enter Lastname    ${EMPTY}
     Enter Usernamenewuser    ${txt_username}
     Enter Passwordnewuser    ${txt_password}
+    execute javascript    window.scrollTo(0,250)
 #    click element    ${captcha}
     Click registersubmit
 
@@ -215,6 +218,7 @@ verify Register Empty Username
     Enter Lastname    ${txt_lastname}
     Enter Usernamenewuser    ${EMPTY}
     Enter Passwordnewuser    ${txt_password}
+    execute javascript    window.scrollTo(0,250)
 #    click element    ${captcha}
     Click registersubmit
 
@@ -227,6 +231,7 @@ verify Register Empty Password
     Enter Usernamenewuser    ${txt_password}
     Enter Passwordnewuser    ${EMPTY}
 #    click element    ${captcha}
+    execute javascript    window.scrollTo(0,250)
     Click registersubmit
 
 #    Close Browser
@@ -241,6 +246,7 @@ verify Register Invalid
     Enter Lastname    ${txt_lastname}
     Enter Usernamenewuser    ${txt_username}
     Enter Passwordnewuser    ${txt_password}
+    execute javascript    window.scrollTo(0,250)
     Click registersubmit
     Error Mesage For captchanewuser    ${captcha_error}
     Close Browser
@@ -255,6 +261,7 @@ verify Register invalidpassword
     Enter Lastname    ${txt_lastname}
     Enter Usernamenewuser    ${txt_username}
     Enter Passwordnewuser    fgfhhf
+    execute javascript    window.scrollTo(0,250)
     click element    ${captcha}
     Click registersubmit
 #    sleep    3s
@@ -278,9 +285,10 @@ verify Register Valid
     Enter Lastname    ${txt_lastname}
     Enter Usernamenewuser    ${txt_username}
     Enter Passwordnewuser    ${txt_password}
+    execute javascript    window.scrollTo(0,250)
     Click Element    ${captcha}
     Click registersubmit
-    execute javascript    window.scrollTo(0,250)
+   
     Click element    ${newuser_backtologin}
     sleep    3s
     Log    Successfully Completed verify Register Valid
