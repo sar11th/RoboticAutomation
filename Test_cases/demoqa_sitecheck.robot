@@ -304,6 +304,7 @@ Verify Login With Invalid User And Valid Password
     Enter Username     invalid_user
     Enter Password     ${txt_password}
     click element    ${loginbutton}
+    execute javascript    window.scrollTo(0,250)
     Error Message For login    ${login_error}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Invalid User And Valid Password
@@ -317,6 +318,7 @@ Verify Login With Valid User And Invalid Password
     Enter Username     ${txt_username}
     Enter Password     hfh
     click element    ${loginbutton}
+    execute javascript    window.scrollTo(0,250)
     Error Message For login    ${login_error}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Valid User And Invalid Password
@@ -328,6 +330,7 @@ Verify Login With Valid User And Empty Password
     Start Browser and Maximize    ${login_url}    ${browser}
     Enter Username     ${txt_username}
     Enter Password     ${EMPTY}
+    execute javascript    window.scrollTo(0,250)
     click element    ${loginbutton}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Valid User And Empty Password
@@ -339,6 +342,7 @@ Verify Login With Empty User And Valid Password
     Start Browser and Maximize    ${login_url}    ${browser}
     Enter Username     ${EMPTY}
     Enter Password     ${txt_password}
+    execute javascript    window.scrollTo(0,250)
     click element    ${loginbutton}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Empty User And Valid Password
@@ -350,6 +354,7 @@ Verify Login With Empty User And InValid Password
     Start Browser and Maximize    ${login_url}    ${browser}
     Enter Username     ${EMPTY}
     Enter Password     jhkhgg
+    execute javascript    window.scrollTo(0,250)
     click element    ${loginbutton}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Empty User And InValid Password
@@ -361,6 +366,7 @@ Verify Login With Empty User And Empty Password
     Start Browser and Maximize    ${login_url}    ${browser}
     Enter Username     ${EMPTY}
     Enter Password     ${EMPTY}
+    execute javascript    window.scrollTo(0,250)
     click element    ${loginbutton}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Empty User And Empty Password
@@ -372,6 +378,7 @@ Verify Login With Wrong User And Empty Password
     Start Browser and Maximize    ${login_url}    ${browser}
     Enter Username     invalid_user
     Enter Password     ${EMPTY}
+    execute javascript    window.scrollTo(0,250)
     click element    ${loginbutton}
     Close Browser
     Log    Succesfully Compeleted Verify Login With Wrong User And Empty Password
@@ -383,6 +390,7 @@ Verify Login With Wrong User And Wrong Password
     Start Browser and Maximize    ${login_url}    ${browser}
     Enter Username     invalid_user
     Enter Password     jdkhaksh
+    execute javascript    window.scrollTo(0,250)
     click element    ${loginbutton}
     Error Message For login    ${login_error}
     Log    Succesfully Compeleted Verify Login With Wrong User And Wrong Password
