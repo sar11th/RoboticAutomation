@@ -106,10 +106,12 @@ Verify Textbox Page
     [Documentation]   This Test Case is used to verify Textbox
     [Tags]   textbox
     Start Browser and Maximize    ${siteurl}    ${browser}
+
     sleep    3s
     click element    ${elements_card}
     sleep    3s
     Verify Textbox
+    Set Window Size    1280    720
     sleep    3s
     Enter Fullname    ${txt_fullname}
     sleep    3s
@@ -117,9 +119,11 @@ Verify Textbox Page
     sleep    3s
     Enter Current address    ${txt_currentaddress}
     sleep    3s
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     Enter Permanent address    ${txt_permanentaddress}
     sleep    3s
-#    execute javascript    window.scrollTo(0,250)
+
+#    scroll element into view    ${submit}
     Click Submit
     Verify Textbox Data
 #    Error message should be visible    ${timeout}
@@ -467,7 +471,6 @@ Logout and Login Test
     Start Browser and Maximize    ${login_url}    ${browser}
 
 #    Set Window Size    1366    768
-
     verify Login Valid
     Set Window Size    1366    768
     sleep    10s
@@ -490,7 +493,7 @@ Logout and Login Test
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
     sleep    10s
 #    Set Selenium Implicit Wait    20s
-
+    Set Window Size    1366    768
     Wait Until Page Contains Element    ${delete_all_books}
     Click Button    ${delete_all_books}
     Wait Until Page Contains Element     ${modal_alert}
