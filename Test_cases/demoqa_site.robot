@@ -111,8 +111,9 @@ Verify Textbox Page
     click element    ${elements_card}
     sleep    3s
     Verify Textbox
-    Set Window Size    1380    710
+    Set Window Size    1380    720
     sleep    3s
+    Execute JavaScript    window.scrollTo(0, 200)
     Enter Fullname    ${txt_fullname}
     sleep    3s
     Enter Email    ${txt_email}
