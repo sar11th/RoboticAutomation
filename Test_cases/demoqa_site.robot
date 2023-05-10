@@ -441,7 +441,7 @@ Verify Login With Valid Passowrd and Valid Username
 
 #    scroll element into view    ${addtocollections}
     Click Button    ${addtocollections}
-    sleep    4s
+#    sleep    4s
     alert should be present    Book added to your collection.
 ##    Handle Alert    action=ACCEPT
     sleep    3s
@@ -473,7 +473,7 @@ Logout and Login Test
 #    Set Window Size    1366    768
     verify Login Valid
     Set Window Size    1366    768
-#    sleep    10s
+    sleep    10s
 
 
     scroll element into view    ${delete_icon}
