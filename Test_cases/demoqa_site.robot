@@ -111,7 +111,7 @@ Verify Textbox Page
     click element    ${elements_card}
     sleep    3s
     Verify Textbox
-    Set Window Size    1280    720
+    Set Window Size    1380    710
     sleep    3s
     Enter Fullname    ${txt_fullname}
     sleep    3s
@@ -432,9 +432,7 @@ Verify Login With Valid Passowrd and Valid Username
     Wait Until Element Is Visible    ${addtocollections}    timeout=10s    error=message="The button is not clickable"
 #    sleep    5s
 
-
      sleep    6s
-
 
      scroll element into view    ${addtocollections}
 #    Execute JavaScript    document.getElementById('addNewRecordButton').click();
@@ -474,12 +472,12 @@ Logout and Login Test
 #    Set Window Size    1366    768
     verify Login Valid
     Set Window Size    1366    768
-    sleep    10s
+#    sleep    10s
 
 
     scroll element into view    ${delete_icon}
     Wait Until Page Contains Element    ${delete_icon}
-#    sleep    3s
+    sleep    3s
     click element    ${delete_icon}
     sleep    3s
     Wait Until Page Contains Element     ${modal_alert}
