@@ -442,6 +442,7 @@ Verify Login With Valid Passowrd and Valid Username
 
 #    scroll element into view    ${addtocollections}
     Click Button    ${addtocollections}
+    sleep    4s
     alert should be present    Book added to your collection.
 ##    Handle Alert    action=ACCEPT
     sleep    3s
